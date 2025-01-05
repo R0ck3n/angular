@@ -6,28 +6,28 @@
     "angular": {
       "projectType": "application",
       "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
+      "root": "projects/angular",
+      "sourceRoot": "projects/angular/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/angular",
-            "index": "src/index.html",
-            "browser": "src/main.ts",
+            "index": "projects/angular/src/index.html",
+            "browser": "projects/angular/src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "projects/angular/tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/angular/public"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "projects/angular/src/styles.css"
             ],
             "scripts": []
           },
@@ -77,15 +77,15 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "tsconfig.spec.json",
+            "tsConfig": "projects/angular/tsconfig.spec.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "projects/angular/public"
               }
             ],
             "styles": [
-              "src/styles.css"
+              "projects/angular/src/styles.css"
             ],
             "scripts": []
           }
