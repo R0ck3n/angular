@@ -1,1 +1,14 @@
-<p>list-games works!</p>
+<table>
+  <tbody>
+    @for (videoGame of games; track videoGame.name) {
+    <tr>
+      <td>{{ videoGame.name }}</td>
+      <td>{{ videoGame.dateSortie }}</td>
+    </tr>
+    } @empty {
+    <tr>
+      <td>Pas de game</td>
+    </tr>
+    }
+  </tbody>
+</table>
